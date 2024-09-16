@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #2563eb;
+  --primary-light: #3b82f6;
+  --primary-dark: #1d4ed8;
+  --secondary-color: #f0f9ff;
+  --background-color: #e0f2fe;
+  --text-color: #1e3a8a;
+  --text-light: #64748b;
+  --danger-color: #ef4444;
+  --success-color: #22c55e;
+  --border-radius: 12px;
+  --box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --transition: all 0.3s ease;
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.app > p {
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+  color: var(--text-light);
+}
+
+form {
+  padding: 2rem;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+input, button {
+  padding: 0.75rem 1rem;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+input {
+  border: 1px solid #e2e8f0;
+  outline: none;
+}
+
+input:focus {
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+}
+
+button {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: var(--primary-dark);
+}
+
+h3 {
+  margin: 1.5rem 0 1rem;
+  font-size: 1.25rem;
+  color: var(--text-color);
+}
+
+.nestedContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.companies {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.currentInput,
+#photo {
+  width: 100%;
+}
+
+#addBtn {
+  background-color: var(--success-color);
+}
+
+#deleteBtn {
+  background-color: var(--danger-color);
+}
+
+button#addBtn:hover {
+  background-color: #15803d;
+}
+
+button#deleteBtn:hover {
+  background-color: #b91c1c;
+}
+
+header {
+  background-color: white;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 2rem;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+}
+
+header h1 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+header p {
+  color: var(--text-light);
+  margin-top: 0.75rem;
+  font-size: 1.125rem;
+}
+
+@media (max-width: 640px) {
+  form, header {
+    padding: 1.5rem;
+  }
+  
+  .nestedContainer {
+    flex-direction: column;
+  }
+}
+
+.resumeContainer {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.printButton {
+  padding: 12px 20px;
+  background-color: #5d3891;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.printButton:hover {
+  background-color: #8c6bb7;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.headerText {
+  flex: 1;
+}
+
+.headerImage {
+  flex: 0 0 150px;
+}
+
+.resumeImage {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.resumeBody {
+  margin-top: 20px;
+}
+
+.resumeBodyTitle {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.resumeBodyContent {
+  font-size: 16px;
+  color: #444;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+.jobResponsibilitiesList {
+  list-style-type: disc;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.jobResponsibilitiesList li {
+  margin-bottom: 10px;
+}
