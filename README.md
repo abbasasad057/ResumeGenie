@@ -18,4 +18,4 @@ Follow these steps to get ResumeGenie up and running:
 First things first, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/resume-master-ai.git
+git clone https://github.com/abbasasad057/ResumeGenie
